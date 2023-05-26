@@ -9,4 +9,7 @@
     resources :bookmarks, only: %i[destroy]
 
     root to: 'lists#index'
+
+    match "/404", :to => "errors#not_found", :via => :all
+
   end
