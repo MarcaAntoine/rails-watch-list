@@ -9,5 +9,4 @@
     resources :bookmarks, only: %i[destroy]
 
     root to: 'lists#index'
-
   end
